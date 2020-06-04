@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    background: url("../images/financialgurubg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'main main main main main'
+    'footer footer footer footer footer';
+    justify-items: center;
+    grid-row-gap: 50%;
+}
+/*You'll want to put a dark background overlay later, over the bg image*/
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+#message {
+    text-align: center;
+}
+
+#emailForm {
+    text-align: center;
+}
