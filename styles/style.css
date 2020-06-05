@@ -49,3 +49,8 @@ h1 {
 #emailForm {
     text-align: center;
 }
+
+#clock {
+    text-align: center;
+    font-size: 5em;
+}
