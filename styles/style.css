@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     /*background full size*/
-    background: url("../images/miningltd.jpg") no-repeat center center fixed; 
+    background: url("../images/mining-construction.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,14 +18,29 @@ body {
     height: 100vh;
     justify-items: center;
 }
+
+body::before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#002f4b,#485461);
+        opacity: .2; 
+  }
+}
 /*You'll want to put a dark background overlay later, over the bg image*/
 
+
 header {
-    grid-area: "header";    
+    grid-area: "header";   
+    font-family: 'Michroma', sans-serif;
 }
 
 main {
     grid-area: "main";
+    font-family: 'Michroma', sans-serif;
 }
 
 aside {
@@ -53,4 +68,5 @@ h1 {
 #clock {
     text-align: center;
     font-size: 5em;
+    color: yellow;
 }
