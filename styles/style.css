@@ -1,31 +1,39 @@
 body {
     font-family: sans-serif;
-    background: url("../images/financialgurubg.jpg") no-repeat center center fixed; 
+    /*background full size*/
+    background: url("../images/miningltd.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /*background*/
     color: white;
+    /*CSS Grid structure*/
     display: grid;
     grid-template-areas: 
-    'header header header header header'
-    'main main main main main'
-    'footer footer footer footer footer';
+    'header' 1fr
+    'main' 1fr
+    'aside' 1fr
+    'footer' 50px;
+    height: 100vh;
     justify-items: center;
-    grid-row-gap: 50%;
 }
 /*You'll want to put a dark background overlay later, over the bg image*/
 
 header {
-    grid-area: header;
+    grid-area: "header";    
 }
 
 main {
-    grid-area: main;
+    grid-area: "main";
+}
+
+aside {
+    grid-area: "aside";
 }
 
 footer {
-    grid-area: footer;
+    grid-area: "footer";
 }
 
 h1 {
@@ -35,6 +43,7 @@ h1 {
 
 #message {
     text-align: center;
+    font-size: 2.4em;
 }
 
 #emailForm {
