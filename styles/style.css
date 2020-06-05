@@ -19,17 +19,6 @@ body {
     justify-items: center;
 }
 
-body::before {
-    content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(to bottom right,#002f4b,#485461);
-        opacity: .2; 
-  }
-}
 /*You'll want to put a dark background overlay later, over the bg image*/
 
 

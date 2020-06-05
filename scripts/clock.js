@@ -6,7 +6,6 @@ const timer = (endDate) => {
     const clock = document.getElementById("clock");
     clock.innerHTML = tObj.day + "d " + tObj.hour + "h "
     + tObj.min + "m " + tObj.sec + "s ";
-    console.log(tObj);
  }  
  
  const getTime = (endDate) => {
