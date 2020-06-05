@@ -45,13 +45,6 @@ h1 {
     font-size: 3.5em;
 }
 
-form {
-    background-color: #2a2d32;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-
 #message {
     text-align: center;
     font-size: 2.4em;
@@ -70,18 +63,18 @@ form {
 #email {
     font-size: 20px;
     background-color: none;
+    padding: 10px
 }
 
 #submit {
     font-size: 20px;
-    color: #71DFBE;
-    background-color: #2B2D2F;
-    border: 1px solid #71DFBE;
+    color: white;
+    border: none;
+    background-color: #D38C54;
+    padding: 10px;
     border-radius: 5px;
 }
 
 #submit:hover {
     cursor: pointer;
-    background-color: #71DFBE;
-    color: #2B2D2F;
 }
