@@ -39,8 +39,3 @@ const timer = (endDate) => {
  } 
 
  setInterval(timer, 1000, "Nov 18, 2021 00:12:13");
-
-const button = document.getElementById("submit");
-button.addEventListener('click', ()=> {
-    alert('Not really functional yet.')
-});
