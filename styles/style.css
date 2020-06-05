@@ -82,6 +82,6 @@ h1 {
 /*For small mobile*/
 @media only screen and (max-width: 600px) {
     body {
-      font-size: 0.5em;
+      font-size: 0.3em;
     }
   }
