@@ -1,39 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-        <title>Mining Ltd.</title>
-    </head>
-    <body>
-        <header>
-            <h1>Mining Ltd.</h1>
-        </header>
-        <main>
-            <section id="message">
-                <p>Stay Tuned</p>
-                <p>We are coming soon</p>
-            </section>
-            <section id="countDown">
-                <span id="clock"></span>
-            </section>
-        </main>
-        <aside>
-            <section id="emailForm">
-                <form data-netlify="true" method="POST">
-                    <p>Enter your email below to keep updated on our site updates and any news</p>
-                    <input type="email" id="email" name="email" placeholder="Enter your email...">
-                    <input type="submit" id="submit">
-                </form>
-            </section>
-        </aside>
-        <footer>
-            &copy; 2020 Mining Ltd. Company Coming Soon. All rights reserved.
-        </footer>
-        <script src="./scripts/clock.js">
-        </script>
-    </body>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Real Estate: The Best Deals</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Real Estate</h1>
+        <span>The Best Deals</span>
+      </div>
+      <div>
+        <span>Call Us Today: +1 (someNumber)</span>
+      </div>
+    </header>
+    <main>
+      <div>
+        <span>Building Wonderful Homes,</span>
+        <span>developing healthy spaces</span>
+      </div>
+      <div>
+        <form method="post">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <input name="name" />
+            <input name="address" />
+            <input name="state" />
+            <input name="zipcode" />
+            <input name="email" />
+            <input name="phone-number" />
+            <input type="submit" value="submit info" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <aside>
+      <div>
+        <!-- Might pull these images from an api and generate a random price for them. -->
+        <figure>
+          <img src="./images/house-one.jpg" height="250" width="250" />
+          <figcaption>
+            <span>Price</span>
+            <span>Description</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="/images/house-two.jpg" height="250" width="250" />
+          <figcaption>
+            <span>Price</span>
+            <span>Description</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./images/house-three.jpg" height="250" width="250" />
+          <figcaption>
+            <span>Price</span>
+            <span>Description</span>
+          </figcaption>
+        </figure>
+      </div>
+    </aside>
+    <footer>
+      &copy; 2021 The Best Real Estate Company In The World, Probably.
+    </footer>
+    <!-- <script src="./scripts/clock.js"></script> -->
+  </body>
 </html>
