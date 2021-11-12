@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Real Estate: The Best Deals</title>
   </head>
   <body>
     <header>
       <div>
-        <h1>Real Estate</h1>
+        <h1 class="impactful">Real Estate</h1>
         <span>The Best Deals</span>
       </div>
       <div>
@@ -16,50 +17,53 @@
       </div>
     </header>
     <main>
-      <div>
-        <span>Building Wonderful Homes,</span>
+      <div id="mission-statement">
+        <span class="impactful">Building Wonderful Homes,</span>
         <span>developing healthy spaces</span>
       </div>
       <div>
         <form method="post">
           <fieldset>
-            <legend>Contact Us</legend>
-            <input name="name" />
-            <input name="address" />
-            <input name="state" />
-            <input name="zipcode" />
-            <input name="email" />
-            <input name="phone-number" />
-            <input type="submit" value="submit info" />
+            <legend class="impactful">Contact Us</legend>
+            <input name="name" placeholder="NAME" />
+            <input name="address" placeholder="ADDRESS" />
+            <input name="state" placeholder="STATE" />
+            <input name="zipcode" placeholder="ZIPCODE" />
+            <input name="email" placeholder="EMAIL" />
+            <input name="phone-number" placeholder="PHONE NUMBER" />
+            <input
+              class="impactful"
+              id="submit-button"
+              type="submit"
+              value="submit info"
+            />
           </fieldset>
         </form>
       </div>
     </main>
     <aside>
-      <div>
-        <!-- Might pull these images from an api and generate a random price for them. -->
-        <figure>
-          <img src="./images/house-one.jpg" height="250" width="250" />
-          <figcaption>
-            <span>Price</span>
-            <span>Description</span>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="/images/house-two.jpg" height="250" width="250" />
-          <figcaption>
-            <span>Price</span>
-            <span>Description</span>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="./images/house-three.jpg" height="250" width="250" />
-          <figcaption>
-            <span>Price</span>
-            <span>Description</span>
-          </figcaption>
-        </figure>
-      </div>
+      <!-- Might pull these images from an api and generate a random price for them. -->
+      <figure>
+        <img src="./images/house-one.jpg" height="250" width="250" />
+        <figcaption>
+          <span class="impactful">Price</span>
+          <span>Description</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="/images/house-two.jpg" height="250" width="250" />
+        <figcaption>
+          <span class="impactful">Price</span>
+          <span>Description</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./images/house-three.jpg" height="250" width="250" />
+        <figcaption>
+          <span class="impactful">Price</span>
+          <span>Description</span>
+        </figcaption>
+      </figure>
     </aside>
     <footer>
       &copy; 2021 The Best Real Estate Company In The World, Probably.
