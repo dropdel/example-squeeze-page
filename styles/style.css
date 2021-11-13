@@ -145,6 +145,9 @@ main form fieldset input {
   main #form-area {
     width: 300px;
   }
+  main {
+    flex-direction: row;
+  }
   #submit-button {
     margin: 30px;
     padding: 20px;
