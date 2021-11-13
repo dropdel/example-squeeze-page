@@ -27,11 +27,11 @@ aside {
   align-items: center;
 }
 header {
-  flex-direction: row;
   justify-content: space-evenly;
   background-color: rgb(35 39 42);
   color: white;
   font-weight: bold;
+  height: fit-content;
 }
 main {
   justify-content: space-evenly;
@@ -46,12 +46,48 @@ main {
   box-shadow: inset 0 0 0 1000px rgba(3, 43, 17, 0.5);
 }
 main form {
+  background-color: rgba(45, 206, 101, 0.8);
+  border-radius: 5px;
+}
+main form fieldset {
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main form fieldset input {
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+}
+
+header #business-name {
   background-color: rgba(45, 206, 101, 0.9);
+  padding: 10px;
+  width: 100%;
+  font-size: 2rem;
   text-align: center;
+}
+figure {
+  background-color: rgba(45, 206, 101, 0.9);
+  transition: scale 0.25s;
+}
+figure:hover {
+  cursor: pointer;
+  scale: 1.05 1.05;
+}
+figure figcaption {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* 463px change it below */
+/* Misc. Styling */
+main #form-area {
   width: 100%;
 }
-/* Misc. Styling */
 legend {
   width: auto;
   margin-left: auto;
@@ -69,17 +105,51 @@ main form fieldset input {
   font-weight: bold;
 }
 #submit-button {
-  margin: 30px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
   border: none;
   background-color: rgb(35 39 42);
   color: white;
+  font-size: 1rem;
 }
 #submit-button:hover {
   cursor: pointer;
 }
 .impactful {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   text-transform: uppercase;
+}
+#phone-number {
+  color: rgba(45, 206, 101, 1);
+}
+/* Media Queries */
+@media screen and (min-width: 769px) {
+  header {
+    flex-direction: row;
+  }
+  header #business-name {
+    width: fit-content;
+    font-size: 1.8rem;
+  }
+  aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  main form {
+    background-color: rgba(45, 206, 101, 0.8);
+  }
+
+  main #form-area {
+    width: 300px;
+  }
+  #submit-button {
+    margin: 30px;
+    padding: 20px;
+  }
+  .impactful {
+    font-size: 1.8rem;
+  }
 }
